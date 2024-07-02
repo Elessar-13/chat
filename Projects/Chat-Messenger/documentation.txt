@@ -1,8 +1,42 @@
-Install python and an Editor
-Create database for storing user data, messages etc.
-Messages are stored in a class called messages
-The website is initiated 
-User logs in via /user_name in the search bar
-Gains acess to past messages
-If the user posts something, his message gets stored inside the database and shown on screen together with the last messages in the chatroom
-The webpage is created via Bootsstrap 
+Step 1: Setup and Installation
+1. Create a project directory Chat-Messenger
+2. Install the required modules:
+
+Flask: pip install flask
+Flask-SQLAlchemy: pip install flask_sqlalchemy
+
+3. Create a virtual environment:
+python3 -- venv venv
+
+4. Activate the virtual environment:
+source venv/bin/activate
+
+5. Create a requirements file:
+pip freeze > requirements.txt
+
+Step 2: Develop the Python, HTML script 
+1. Create an app.py main file
+2. Create a database:
+from app import app
+with app.app_context():
+    db.create_all()
+
+Step 3: Test the script:
+Test with various inputs:
+- Messange longer than 500 characters
+- No username
+
+Debug any using online resources if needed (e.g stackoverflow)
+
+Step 4: Upload the Code to GitHub
+
+Create a new repository on GitHub
+Add the repository as a remote to your loacl project
+git remote add orgigin https::github.com/Elessar/chat.git
+
+Push the code to the repository:
+
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
