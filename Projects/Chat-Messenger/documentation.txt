@@ -1,0 +1,8 @@
+Install python and an Editor
+Create database for storing user data, messages etc.
+Messages are stored in a class called messages
+The website is initiated 
+User logs in via /user_name in the search bar
+Gains acess to past messages
+If the user posts something, his message gets stored inside the database and shown on screen together with the last messages in the chatroom
+The webpage is created via Bootsstrap 
